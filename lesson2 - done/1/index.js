@@ -11,3 +11,11 @@
   *          результат множення: 2
   *          результат ділення: 0.5
   */
+
+let sum1 = 14
+let sum2 = 88
+
+console.log(sum1 + sum2)
+console.log(sum1 - sum2)
+console.log(sum1 * sum2)
+console.log(sum1 / sum2)
