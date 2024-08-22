@@ -1,6 +1,6 @@
 // Перепишіть код з використанням однієї конструкції `switch`:
 
-// const value = 0;
+const value = 3;
 
 // if (value === 0) {
 //     console.log(0);
@@ -11,3 +11,16 @@
 // if (value === 2 || value === 3) {
 //     console.log('2,3');
 // }
+
+switch (value) {
+    case 0: 
+        console.log(0);
+        break;
+    case 1:
+        console.log(1);
+        break;
+    case 2:
+    case 3:
+        console.log('2,3');
+        break;
+}
