@@ -4,3 +4,19 @@
 // Должно получиться 390.
 
 // Если объект salaries пуст, то результат должен быть 0.
+
+const salaries = {
+    Oleh: 2500,
+    Misha: 4500,
+    Illiya: 7200
+}
+
+function summarize(obj) {
+    return Object.values(obj).reduce(
+        (previousValue, currentValue, index, array) => { 
+            return previousValue + currentValue
+        }
+    )
+}
+
+console.log(summarize(salaries))

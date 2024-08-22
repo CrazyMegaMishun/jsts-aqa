@@ -21,3 +21,23 @@
  * - Для того что бы обратиться к свойству оъекта необходимо использовать this.hours и this.rate
  * - Для решения данного задания вам потребуется defineProperty или defineProperties
  */
+
+const person = {
+    get salary() {
+        return `Зарплата за проект составляет ${this.rate * this.hours}$`
+    }
+}
+
+Object.defineProperty(person, 'rate', {
+    value: 100,
+    writable: true,
+    configurable: false,
+})
+
+Object.defineProperty(person, 'hours', {
+    value: 2,
+    writable: true,
+    configurable: false
+})
+
+alert (person.salary)

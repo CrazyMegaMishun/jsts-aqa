@@ -13,3 +13,26 @@
  */
 
 // РЕШЕНИЕ
+
+let number = prompt("Введите число для того что бы получить массив его делителей: ")
+
+function getDivisors(num) {
+    if (isNaN(num)) {
+        alert(`Given argument +${num}+ is not a number`)
+        throw new Error (`Given argument +${num}+ is not a number`)
+    }
+    if (parseInt(num) < 1) {
+        alert(`Given argument +${num}+ is less than 1`)
+        throw new Error (`Given argument +${num}+ is less than 1`)
+    }
+
+    let arr = []
+
+    for (let i = 0; i<=parseInt(num); i++){
+        if(parseInt(num) % i === 0) arr.push(i)
+    }
+
+    return arr
+}
+
+alert(getDivisors(number))

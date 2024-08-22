@@ -8,3 +8,11 @@
  */
 
 // РЕШЕНИЕ
+
+let n = prompt("Введите число для возведения в куб: ")
+
+function f (toCube) {
+    return Math.pow(toCube, 3)
+}
+
+alert(`Куб из ${n} равен ${f(n)}`)

@@ -16,4 +16,13 @@
  * - Для того что бы обратиться к свойству оъекта необходимо использовать this.name, this.surname и this.job. *
  */
 
-// РЕШЕНИЕ
+const user = {
+    name: prompt(),
+    surname: prompt(),
+    job: prompt(),
+    get data() {
+        return `Привет! Я ${this.name} ${this.surname} и я работаю ${this.job}`
+    }
+}
+
+alert (user.data)

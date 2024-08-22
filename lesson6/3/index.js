@@ -11,3 +11,12 @@
  */
 
 // РЕШЕНИЕ
+
+let n = prompt("Введите число для проверки на чётность: ")
+
+function isEven(num) {
+    if (isNaN(num)) throw new Error (`Given symbol -${num}- is not a Number`)
+    return num % 2 == 0 ? true : false
+}
+
+alert(isEven(n))
